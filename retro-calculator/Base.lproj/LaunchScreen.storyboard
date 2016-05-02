@@ -26,15 +26,38 @@
                                     <constraint firstAttribute="height" constant="143" id="EZS-wH-Bb0"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="aZ8-fb-Msk">
+                                <rect key="frame" x="130" y="28" width="340" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ikr-oR-tAm"/>
+                                    <constraint firstAttribute="width" constant="340" id="N0C-u0-NBm"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ikr-oR-tAm"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-ng-0HE">
+                                <rect key="frame" x="159" y="228" width="283" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="EsV-zY-VKb"/>
+                                    <constraint firstAttribute="width" constant="283" id="PJ9-Yp-CBu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ZaM-ng-0HE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8Kt-cn-a5w"/>
                             <constraint firstItem="Na9-8y-bcH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="9Gk-Gl-6T2"/>
                             <constraint firstAttribute="trailing" secondItem="3Y9-vc-8c0" secondAttribute="trailing" id="AjT-Wx-YFs"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3Y9-vc-8c0" secondAttribute="bottom" id="BvL-jf-ruY"/>
                             <constraint firstItem="3Y9-vc-8c0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Bxo-4r-WNJ"/>
+                            <constraint firstItem="aZ8-fb-Msk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="S2l-Wq-Bya"/>
+                            <constraint firstItem="aZ8-fb-Msk" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="Tyz-9l-HFH"/>
                             <constraint firstItem="3Y9-vc-8c0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="est-xo-Y48"/>
                             <constraint firstAttribute="trailing" secondItem="Na9-8y-bcH" secondAttribute="trailing" id="wfm-g6-Jo9"/>
+                            <constraint firstItem="ZaM-ng-0HE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ywQ-kC-sB8"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Na9-8y-bcH" secondAttribute="bottom" id="zA9-Nq-27f"/>
                         </constraints>
                     </view>
@@ -45,7 +68,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Retro-Calc" width="755" height="111"/>
         <image name="launchbg" width="1433" height="957"/>
         <image name="launchground" width="999" height="225"/>
+        <image name="robot" width="786" height="402"/>
     </resources>
 </document>
