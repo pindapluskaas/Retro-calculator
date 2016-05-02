@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="143" id="5qf-Ej-v3G"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="aZ8-fb-Msk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="aZ8-fb-Msk">
                                 <rect key="frame" x="130" y="28" width="340" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="3t8-Ps-tsh"/>
@@ -72,6 +72,7 @@
                             <constraint firstItem="3Y9-vc-8c0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="nMb-fw-cWS"/>
                             <constraint firstItem="3Y9-vc-8c0" firstAttribute="centerY" secondItem="ZaM-ng-0HE" secondAttribute="centerY" id="noo-wA-ujK"/>
                             <constraint firstItem="Na9-8y-bcH" firstAttribute="top" secondItem="ZaM-ng-0HE" secondAttribute="bottom" constant="85" id="xhx-Z2-Z21"/>
+                            <constraint firstItem="aZ8-fb-Msk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ymX-kj-r38"/>
                             <constraint firstItem="3Y9-vc-8c0" firstAttribute="trailing" secondItem="Na9-8y-bcH" secondAttribute="trailing" id="z0l-IJ-PLy"/>
                         </constraints>
                         <variation key="default">
