@@ -35,8 +35,8 @@
                                     <constraint firstAttribute="height" constant="40" id="kpS-V1-aKH"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="phy-Ai-GLW">
-                                <rect key="frame" x="180" y="75" width="241" height="451"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="phy-Ai-GLW">
+                                <rect key="frame" x="180" y="75" width="241" height="531"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="FTg-Cj-K4n">
                                         <rect key="frame" x="0.0" y="0.0" width="241" height="71"/>
@@ -52,6 +52,16 @@
                                             <constraint firstAttribute="height" constant="380" id="xfN-QB-aR3"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvF-iM-Vl1">
+                                        <rect key="frame" x="0.0" y="451" width="241" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="zBd-0I-htm"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="clear"/>
+                                        <connections>
+                                            <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cQ1-X6-1Bz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="lw0-7d-8SA">
@@ -273,8 +283,14 @@
                             <constraint firstItem="phy-Ai-GLW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tjb-Od-Vky"/>
                             <constraint firstItem="FEm-zl-6jI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vx4-9b-V61"/>
                             <constraint firstItem="Wdz-uL-hgZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y6p-qN-cFL"/>
+                            <constraint firstItem="lw0-7d-8SA" firstAttribute="top" secondItem="phy-Ai-GLW" secondAttribute="top" constant="89" id="yBf-bZ-M7s"/>
                             <constraint firstItem="lw0-7d-8SA" firstAttribute="centerY" secondItem="phy-Ai-GLW" secondAttribute="centerY" constant="35" id="zoX-Ib-PbB"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zoX-Ib-PbB"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="outputLbl" destination="Aq5-Un-ZY9" id="l93-HB-rzs"/>
@@ -298,6 +314,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
